@@ -1,0 +1,22 @@
+app/**/*.js
+app/**/*.js.map
+
+# tsd
+typings/
+
+# npm
+
+/npm-debug.log
+
+# vendors
+node_modules/
+
+# editors
+pubspec.lock
+.c9
+.idea/
+.settings/
+*.swo
+modules/.settings
+.vscode
+modules/.vscode
