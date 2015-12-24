@@ -5,7 +5,6 @@ app/**/*.js.map
 typings/
 
 # npm
-
 /npm-debug.log
 
 # vendors
