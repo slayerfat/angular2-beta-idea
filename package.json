@@ -2,7 +2,10 @@
   "name": "angular2-beta-0-idea",
   "version": "1.0.0",
   "description": "Idea basica de un quickstart",
-  "repository": "https://github.com/slayerfat/angular2-beta-idea",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:slayerfat/angular2-beta-idea.git"
+  },
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -11,7 +14,7 @@
     "tsc:w": "tsc -w",
     "gulp:sass": "gulp sass:watch",
     "lite": "lite-server --open=public",
-    "start": "concurrent \"npm run gulp:sass\" \"npm run lite\" "
+    "start": "concurrent \"npm run gulp:sass\" \"npm run tsc:w\" \"npm run lite\" "
   },
   "author": "Alejandro Granadillo <slayerfat@gmail.com>",
   "license": "MIT",
