@@ -1,15 +1,15 @@
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {Component} from "angular2/core";
+import {RouteConfig, ROUTER_DIRECTIVES} from "angular2/router";
 
-import {IndexComponent} from "../index/index-component"
+import {IndexComponent} from "../index/index-component";
 
 @Component({
-  selector: 'app',
-  templateUrl: 'app/components/app/app-component.html',
-  directives: [ROUTER_DIRECTIVES, IndexComponent]
+  directives: [ROUTER_DIRECTIVES, IndexComponent],
+  selector: "app",
+  templateUrl: "app/components/app/app-component.html"
 })
 @RouteConfig([
-  {path:'/', name: 'Index', component: IndexComponent},
+  {component: IndexComponent, name: "Index", path: "/"},
 ])
 export class AppComponent {
   //
